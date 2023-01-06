@@ -1,0 +1,10 @@
+target
+.classpath
+.settings
+.project
+*.iml
+.idea
+build
+.gradle
+.java-version
+.DS_Store

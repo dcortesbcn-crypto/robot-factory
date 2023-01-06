@@ -16,13 +16,14 @@ If an order is valid and there are enough parts to assemble the robot:
 - The priced order should be calculated
 - The stock must be adjusted to reflect the fact that parts are being used in robot manufacturing. 
 
+
 ## Architecture & Design decisions
 
 It has been decided to use a hexagonal architecture (or port & adapters), this decision has been made
 taking into account the next points:
   - The business logic should be the core of the application
   - The API level should be delegated to a second plan to show that it's only a way to access the business
-  - The frameworks from a specific adapter should not condition too much the design of our application, in this specific case Spring 
+  - The frameworks from a specific adapter should not condition the design of our application, in this specific case Spring 
     boot should be contained on it's port
   - Hexagonal works really cool with DDD
 
@@ -30,8 +31,7 @@ As I feel more comfortable with the functional programming approach about handli
 I have decided to implement a simple Either (Check Result from F or Either from Scala), In 
 a real code I will have used the Either from Arrow.kt and not my basic implementation
 
-// TODO talk about price precision
-// TODO atomic transaction
+
 
 ## Versions Updates
 
