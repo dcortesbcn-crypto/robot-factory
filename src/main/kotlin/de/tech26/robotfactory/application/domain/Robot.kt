@@ -37,6 +37,7 @@ data class Robot(
                         it.second == 1 -> null
                         else -> TooManyOptionsForPart(it.first)
                     }
+
                 }
         }
 
